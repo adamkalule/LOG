@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+}
+.col-sm-2{
+    background-color: gainsboro;
+    height: 655px;
+}
+.col-sm-8{
+    background-image: url(../images/building.jpeg);
+    background-size: cover;
+    height: 655px;
+    background-attachment: scroll;
+    background-blend-mode: darken;
+}
+ul a{
+    margin-left: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+ul a:hover{
+    background-color: blue;
+    color: white;
+}
+form{
+    margin-top: 120px;
+    color: whitesmoke;
+}
+.form-group{
+    margin-left: 80px;
+}
+
+/* Full-width input fields */
+input[type=email], input[type=password]{
+    width: 400px;
+    border-radius: 45px;
+    opacity: 0.4;
+}
+input[type=checkbox]{
+    margin-left: 80px;
+    background-color: blue;
+    color: blue;
+    cursor: pointer;
+}
+button{
+    width: 400px;
+    cursor: pointer;
+    margin-left: 80px;
+}
+button:hover{
+    opacity: 0.4;
+    background-color: blue;
+}
+button[type=submit]{
+    background-color: blue;
+    border-radius: 45px;
+    color: white;
+}
+.forgot{
+    text-align: center;
+}
+.horizontal{
+    width: 400px;
+    margin-left: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
