@@ -72,10 +72,9 @@ ol a:hover{
 
 
 input[type=text], input[type=password] {
-    width: 450px;
+    width: 400px;
     padding: 12px 20px;
     margin: 8px 0;
-    display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
@@ -84,6 +83,7 @@ input[type=text], input[type=password] {
 input[type="email"]{
     opacity: 0.4;
     width: 400px;
+    padding: 12px 20px;
 }
 
 
@@ -112,6 +112,7 @@ button {
 
 .signupbtn{
     padding: 10px 20px;
+    margin-right: 20px;
 }
 
 
@@ -140,7 +141,7 @@ button {
     background-size: cover;
     margin: 5% auto 15% auto; 
     border: 3px solid blue;
-    width: 70%; 
+    width: 65%; 
 }
 
 
