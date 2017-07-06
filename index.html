@@ -8,11 +8,19 @@
         <link rel="stylesheet"href="css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
-    <script src="js/main.js"></script>
-    <body>
-        <div class="container">
-            <div class="col-sm-2"></div>
+        <script>
+                function validateForm() {
+                    var x = document.forms["myForm"]["fname"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                    }
+                }
+        </script>
+        </head>
+        <body>
+            <div class="container">
+                <div class="col-sm-2"></div>
             <div class="col-sm-8">
                     <form action="/action_page.php"method="post"name="myForm">
                     <ul>
@@ -38,7 +46,11 @@
                     </div>
                     <br>
                     <div class="forgot">
+                    <ol>
+                    <a href="https://account.live.com/password/reset">
                     <p>Forgot Password?</p>
+                    </a>
+                    </ol>
                     </div>
                     </form>
                </div>
