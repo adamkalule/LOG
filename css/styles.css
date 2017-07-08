@@ -1,9 +1,34 @@
 body{
     margin: 0;
+    background-color: darkgray;
 }
-.col-sm-2{
-    background-color: gainsboro;
-    height: 655px;
+@media screen and (max-width:959px) { 
+    .col-sm-8{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .col-sm-8{
+        width: 70%;
+    }
+    .container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:320px) {
+    .col-sm-8{
+        width: 320px;
+    }
+    .container{
+        width: 320px;
+    }
+}
+.container{
+    width: 700px;
 }
 .col-sm-8{
     background-image: url(../images/building.jpeg);
@@ -11,6 +36,9 @@ body{
     height: 655px;
     background-attachment: scroll;
     background-blend-mode: darken;
+    width: 700px;
+    border-top: 2px solid black;
+    margin-left: 0px;
 }
 ul a{
     margin-left: 40px;
@@ -45,6 +73,7 @@ button{
     width: 400px;
     cursor: pointer;
     margin-left: 80px;
+    margin-bottom: 100px;
 }
 button:hover{
     opacity: 0.4;
@@ -57,6 +86,7 @@ button[type=submit]{
 }
 .forgot{
     text-align: center;
+    margin-left: 40px;
 }
 ol a{
     font-size: 20px;
@@ -68,6 +98,7 @@ ol a:hover{
 .horizontal{
     width: 400px;
     margin-left: 80px;
+    color: gray;
 }
 
 
@@ -93,7 +124,8 @@ button {
     margin: 80px;
     border: none;
     cursor: pointer;
-    width: 450px;
+    width: 400px;
+    margin-bottom: 50px;
 }
 
 
@@ -106,7 +138,7 @@ button {
 
 .cancelbtn,.signupbtn {
     float: left;
-    width: 200px;
+    width: 150px;
 }
 
 
@@ -116,7 +148,7 @@ button {
 }
 
 
-.container {
+.container1 {
     padding: 12px;
 }
 
@@ -132,15 +164,15 @@ button {
     overflow: auto; 
     background-color: black; 
     background-color: rgba(0,0,0,0.4); 
-    padding-top: 60px;
+    padding-top: 20px;
 }
 
 
 .modal-content {
     background-image: url(../images/4.jpg);
     background-size: cover;
-    margin: 5% auto 15% auto; 
-    border: 3px solid blue;
+    margin: 3% auto 15% auto; 
+    border: 2px solid blue;
     width: 65%; 
 }
 
@@ -168,7 +200,12 @@ button {
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
+    .cancelbtn, .signupbtn {
+        width: 320px;
+    }
+}
+@media screen and (max-width: 500px) {
     .cancelbtn, .signupbtn {
         width: 100%;
     }
