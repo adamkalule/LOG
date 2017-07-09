@@ -1,6 +1,13 @@
+html{
+    width: 100%;
+    height: 100%;
+}
 body{
     margin: 0;
     background-color: darkgray;
+    line-height: 1.6em;
+    -webkit-font-smoothing: anitialised;
+    -moz-osx-font-smoothing: grayscale;
 }
 @media screen and (max-width:959px) { 
     .col-sm-8{
@@ -9,36 +16,48 @@ body{
     .container{
         width: 100%;
     }
+    .body{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:624px) {
     .col-sm-8{
-        width: 70%;
+        width: 100%;
     }
     .container{
-        width: 70%;
+        width: 100%;
+    }
+    .body{
+        width: 100%;
     }
 }
 @media screen and (max-width:320px) {
     .col-sm-8{
-        width: 320px;
+        width: 100%;
     }
     .container{
-        width: 320px;
+        width: 100%;
+    }
+    .body{
+        width: 100%;
     }
 }
 .container{
-    width: 700px;
+    width: 600px;
 }
 .col-sm-8{
+    z-index: 15;
     background-image: url(../images/building.jpeg);
     background-size: cover;
     height: 655px;
     background-attachment: scroll;
     background-blend-mode: darken;
-    width: 700px;
+    width: 600px;
     border-top: 2px solid black;
     margin-left: 0px;
+    -webkit-font-smoothing: anitialised;
+    -moz-osx-font-smoothing: grayscale;
 }
 ul a{
     margin-left: 40px;
